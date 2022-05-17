@@ -1,0 +1,128 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import './pages/home/style.less';
+@import './pages/detail/style.less';
+@import './pages/components/style.less';
+@import './font/font.css';
+
+@mainCl: #66addf;
+@textCl: #4c4845;
+@bgCl: #4c4845;
+
+body {
+  font-family: 'Entype', 'sans-serif', '微软雅黑';
+}
+
+.main-cl {
+  color: @mainCl;
+}
+
+.text-cl {
+  color: @textCl;
+}
+
+.bg {
+  color: #fff;
+  background-color: @textCl;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.blod {
+  font-weight: bold;
+}
+
+@media screen and (min-width:320px) {
+  html {
+      font-size: 850px;
+  }
+}
+
+@media screen and (min-width:850px) {
+  html {
+      font-size: 100vw;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  html {
+      font-size: 1400px;
+  }
+}
+
+@vw: 0.01rem;
+
+html {
+  background-color: #f5f5f5;
+}
+
+body {
+  width: 100*@vw;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.df, .frw {
+  display: flex;
+}
+
+.frw {
+  flex-wrap: wrap;
+}
+
+.fx1 {
+  flex: 1 1 0;
+}
+
+.aic {
+  align-items: center;
+}
+
+.aie {
+  align-items: flex-end;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jce {
+  justify-content: flex-end;
+}
+
+.jcr {
+  justify-content: space-around;
+}
+
+.w-max {
+  width: 100%;
+}
+.h-max {
+  height: 100%;
+}
+
+.ww {
+  width: 100vw;
+}
+
+.hidden {
+  display: none;
+}
+
+.blod {
+  font-weight: bold;
+}
+
+.white {
+  color: #fff;
+}

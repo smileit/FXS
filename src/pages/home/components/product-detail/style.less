@@ -1,0 +1,56 @@
+.detail-popup {
+  width: 80vw;
+  border-radius: 10px;
+  overflow: hidden;
+  .pic-part {
+    width: 400px;
+    background-color: #fff;
+    .box {
+      width: 400px;
+      padding: 20px;
+    }
+    img {
+      width: 360px;
+    }
+  }
+  .discription {
+    padding: 20px 30px; 
+    background-color: @bgCl;
+    color: #ccc;
+    h3 {
+      margin: 0;
+    }
+    .product-title {
+      color: #eee;
+      margin: 0;
+      padding: 0;
+      padding-top: 5px;
+      line-height: 40px;
+    }
+  }
+  .tab-cmp {
+    .header {
+      border-bottom: 2px solid #bbb;
+      .tab-icon {
+        background-color: transparent;
+        min-width: 100px;
+        text-align: center;
+        &.active {
+          border-bottom: 2px solid @mainCl;
+          margin-bottom: -2px;
+        }
+      }
+    }
+    .specs {
+      & > div {
+        line-height: 36px;
+      }
+    }
+  }
+  .price {
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 10px;
+  }
+}
