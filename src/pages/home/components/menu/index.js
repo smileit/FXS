@@ -5,10 +5,10 @@ class Menu extends Component {
   render() {
     return (
       <div className='menu-part df aic'>
-        <div className='logo fx1'>
-        <img src={`./img/logo.png`} alt='风响树 logo' />
+        <div className='logo df fx1'>
+          <img src={`./img/logo.png`} alt='风响树 logo' />
+          <div className='item text-cl'>深圳市风响树科技有限公司</div>
         </div>
-       <div className='item text-cl'>深圳市风响树科技有限公司</div>
         {
           config.menus.map(m => <div
             id={m.text}
