@@ -1,45 +1,35 @@
 export default {
-  productText: 'Contemporary, rustic, elegant, or whimsical—whatever your artistic vision may be, we have the medium to bring it to life. We carry only the finest natural stone and tile lines, each with a character all its own.',
+  productText: '风响树作为海康威视战略合作伙伴，提供安防解决方案、人脸识别方案、门禁考勤、智能无人值守地磅等服务。具有丰富开发经验和创新精神的技术开发团队，提供公众号、小程序开发及软件外包等服务。',
   productList: [
     {
       id: 'p001',
-      text: 'non woven bag',
-      pic: 'p001.jpg'
+      text: '平安城市',
+      pic: 'p001_1.jpeg'
     },
     {
       id: 'p002',
-      text: 'pp woven bag',
-      pic: 'p002.jpg'
+      text: '小区安防',
+      pic: 'p002_1.jpeg'
     },
     {
-      id: 'p001',
-      text: 'pp non woven bag',
-      pic: 'p001.jpg'
+      id: 'p003',
+      text: '酒店安防',
+      pic: 'p003_1.jpeg'
     },
     {
-      id: 'p002',
-      text: 'cooler bag',
-      pic: 'p002.jpg'
+      id: 'p004',
+      text: '人脸识别',
+      pic: 'p004_1.jpeg'
     },
     {
-      id: 'p001',
-      text: 'shoulder bag',
-      pic: 'p002.jpg'
+      id: 'p005',
+      text: '无人值守地磅',
+      pic: 'p005_1.jpeg'
     },
     {
-      id: 'p001',
-      text: 'PET bag',
-      pic: 'p001.jpg'
-    },
-    {
-      id: 'p001',
-      text: 'Drawstring bag',
-      pic: 'p001.jpg'
-    },
-    {
-      id: 'p001',
-      text: 'ice bag',
-      pic: 'p001.jpg'
+      id: 'p006',
+      text: '公众号小程序开发',
+      pic: 'p006_1.jpeg'
     }
   ],
   experitise: {
@@ -68,17 +58,6 @@ export default {
       }
     ]
   },
-  fatoryPics: [
-    {
-      url: 'location-v1.jpg'
-    },
-    {
-      url: 'location-v2.jpg'
-    },
-    {
-      url: 'location-v3.jpg'
-    }
-  ],
   stories: [
     {
       picUrl: 'p001.jpg',

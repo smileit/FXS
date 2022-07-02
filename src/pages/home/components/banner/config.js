@@ -3,17 +3,12 @@ export default {
     {
       title: '海康威视战略合作伙伴',
       subTitle: '',
-      url: 'p4.png'
-    },
-    {
-      title: '华为官方合作伙伴',
-      subTitle: '',
-      url: 'p5.jpg'
+      url: 'p1_2.jpeg'
     },
     {
       title: '资深软件开发团队',
       subTitle: '',
-      url: 'p4.png'
+      url: 'p2_2.jpeg'
     }
   ]
 }
