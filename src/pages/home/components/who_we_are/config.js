@@ -1,6 +1,5 @@
 export default {
   title: '深圳市风响树科技有限公司为您提供专业的软硬件服务',
-  detail: ("坐标深圳，于2014年创立的深圳市风响树科技有限公司致力于为客户提供专业的软硬件服务和解决方案。In our philosophy, we believe that a packaging bag can be more than just something used to pack products. It can be an extension of yourself and a way to express the passion of your to clients, as the bag will be first thing they lay their eyes on when receiving your package.\
-  </br>That is why we strive to provide you with high quality products that will grab your customers attention, while protecting whatever you put inside. If you cooperative with us, more and more people will pay close attention to your product and the sale will increase rapidly by vivid printing package. We truly care about each client as we understand how important packaging is, so our passion is to provide you with the perfect bag matches the passion that you have for serving your customers.\
-  <p><a href=\"mailto:sales@maxgiftexporter.com?subject=I have a Enquery\"><font color=#66addf>CONTACT US</font></a> if you have any idea about custom-making Non-woven Eco bag! ")
+  detail: ("坐标深圳，于2014年创立的深圳市风响树科技有限公司致力于为客户提供专业的软硬件服务和解决方案。.\
+  <p><a href=\"mailto:sales@maxgiftexporter.com?subject=I have a Enquery\"><font color=#66addf>联系我们</font></a> 获得你想要的服务！ ")
 }
