@@ -18,7 +18,7 @@ class Footer extends Component {
           </div>
           <div className='go-top' onClick={this.props.onGoTop}>TOP<span className='arrow-top' /></div>
         </div>
-        <div className='copy-right'>© 2022 深圳市风响树科技有限公司</div>
+        <div className='copy-right'>© 2024 深圳市风响树科技有限公司</div>
       </div>
     );
   }
