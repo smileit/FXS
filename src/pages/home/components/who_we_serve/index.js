@@ -18,7 +18,7 @@ class WhoWeServe extends Component {
       <div className='who-we-serve-part'>
         <TitleBlock title='WHO WE SERVE' />
         <div className='client-part'>
-          <h1 className='main-cl title'>我们为尊贵的客户量身定制独特需求。</h1>
+          <h1 className='main-cl title'>我们为您提供量身定制的服务。</h1>
           <div className='list df aic jcc'>
             {
               config.clients.map((c, idx) => <div className='item' key={idx}>
