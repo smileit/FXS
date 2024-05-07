@@ -1,17 +1,17 @@
 export default {
   clients: [
     {
-      title: 'Designer & Architects',
+      title: '软件项目解决方案',
       picUrl: 'c1.png',
       text: '我们用专业的服务赢得客户的信任，确保您每一次选择都满意无忧！'
     },
     {
-      title: 'Designer & Architects',
+      title: 'IT系统集成',
       picUrl: 'c2.png',
       text: '我们承诺提供卓越的软件解决方案，让您的业务运营更加高效安心。'
     },
     {
-      title: 'Designer & Architects',
+      title: 'AI创新中心',
       picUrl: 'c3.png',
       text: '以先进的技术和贴心的服务，确保您在每一个项目中都能体验到我们的专业与可靠。'
     }
