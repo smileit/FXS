@@ -3,17 +3,17 @@ export default {
     {
       title: 'Designer & Architects',
       picUrl: 'c1.png',
-      text: 'Looking to impress your client with a jaw-dropping material? Our selection of exotic natural stone and tile never disappoints.'
+      text: '我们用专业的服务赢得客户的信任，确保您每一次选择都满意无忧！'
     },
     {
       title: 'Designer & Architects',
       picUrl: 'c2.png',
-      text: 'Looking to impress your client with a jaw-dropping material? Our selection of exotic natural stone and tile never disappoints.'
+      text: '我们承诺提供卓越的软件解决方案，让您的业务运营更加高效安心。'
     },
     {
       title: 'Designer & Architects',
       picUrl: 'c3.png',
-      text: 'Looking to impress your client with a jaw-dropping material? Our selection of exotic natural stone and tile never disappoints.'
+      text: '以先进的技术和贴心的服务，确保您在每一个项目中都能体验到我们的专业与可靠。'
     }
   ],
   comments: [
