@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans SC", ui-sans-serif, system-ui, -apple-system, "PingFang SC",
+    "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Single-hue tech blue system. Every surface, text tone and accent derives
+     from the same hue so the page reads as one material instead of three
+     competing palettes (slate / ink / signal). */
+
+  /* Surfaces — page through raised panels */
+  --color-ink-950: #f2f7fd;
+  --color-ink-900: #e9f2fc;
+  --color-ink-850: #dfeaf8;
+  --color-ink-800: #d3e3f5;
+  --color-ink-700: #c2d8ef;
+  --color-ink-600: #adc8e5;
+
+  /* Accent — saturated azure for CTAs and emphasis */
+  --color-signal-300: #5aa9f5;
+  --color-signal-400: #2b8cf0;
+  --color-signal-500: #0f6fe0;
+  --color-signal-600: #0a56b4;
+
+  /* Text tones — all blue-tinted neutrals, no pure gray */
+  --color-body: #12304f;
+  --color-muted: #46648a;
+  --color-faint: #6b87a8;
+  --color-line: #c8dcf0;
+
+  /* Deep ink ramp — the only colors allowed for text on light surfaces.
+     Kept apart from the ink-* surface ramp above so a light panel colour
+     can never be mistaken for a readable text tone. */
+  --color-deep-950: #0b1f36;
+  --color-deep-900: #12304f;
+  --color-deep-800: #1c3f63;
+  --color-deep-700: #2c5178;
+  --color-deep-600: #46648a;
+  --color-deep-500: #6b87a8;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  html,
+  body {
+    background-color: var(--color-ink-950);
+    color: var(--color-body);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--color-signal-500) 35%, transparent);
+    color: #fff;
+  }
+}
+
+@layer components {
+  /* Fine grid used behind hero / CTA sections */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(13, 79, 168, 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(13, 79, 168, 0.07) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .bg-grid-dark {
+    background-image:
+      linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .text-gradient {
+    background-image: linear-gradient(
+      100deg,
+      #0d4fa8 0%,
+      #1a6fd4 45%,
+      #2e90ff 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .glass {
+    background-color: rgba(240, 246, 253, 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+}
+
+@layer utilities {
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+}
+
+@keyframes fxs-pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes fxs-scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fxs-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fxs-fade {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
